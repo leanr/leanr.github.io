@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+<title>Coming Soon</title>
+
+
+
+
+<meta name="description" content="Responsive and stylable image maps plugin using jQuery, SVG and CSS3">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
+
+<link rel="stylesheet" type="text/css" href="build/jquery.mapify.css">	
+
+<style type="text/css">
+
+	body{
+		font-family: arial, sans-serif;
+		font-family: 'Oswald', sans-serif;
+		font-weight: 400;
+		background: #eee;
+		font-size: 12px;
+		text-align: center;
+		margin: 0px;
+		padding: 0px;
+		cursor: default;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	
+	
+	.btn{
+		padding: 10px 20px;
+		min-width: 150px;
+		text-align: center;
+		background: #7777E3;
+		color: #fff !important;
+		font-size: 18px;
+		margin: 1px;
+		display: inline-block;
+		text-decoration: none;
+		text-transform: uppercase;
+		
+		transition: all 0.25s;
+	}
+	.btn:hover{
+		background: #6264c7;
+	}
+	
+	.pluginInfo{
+		margin: 0px auto;
+		padding-top: 20px;
+		font-family: 'Oswald', sans-serif;
+		font-size: 400;
+		font-size: 13px;
+		max-width: 300px;
+		text-transform: uppercase;
+		color: #999;
+	}
+	
+	
+	
+	pre{
+		background: #fff;
+		display: inline-block;
+		text-align: left;
+		padding: 20px;
+		overflow: scroll;
+		margin: 0px;
+		margin-bottom: 5%;
+		border-radius: 3px;
+		
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	}
+	
+	
+	
+	area{
+		cursor: pointer;
+	}
+	
+	.mapify-holder{
+		max-width: 90%;
+		min-width: 500px;
+	}
+	
+	.scrollX{
+		overflow:scroll; 
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 5%;
+	}
+	
+	/* Mapify custom popOver example */
+	
+	.mapify-popOver strong{
+		font-weight: 400;
+		font-size:24px;
+		line-height: 1em;
+		display: block;
+		margin-bottom: 10px;
+		color: #000;
+	}
+	.mapify-popOver{
+		color: #999;
+		font-size: 16px;
+		height: 130px;
+	}
+	.mapify-popOver-content{
+		position: relative;
+		top:50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+	}
+	
+	/* Custom hovering style */
+	.mapify-hover{
+		fill:rgba(0,0,0,0.15);
+		stroke: #fff;
+		stroke-width: 2;
+	}
+	
+</style>
+
+</head>
+<body>
+
+<header>
+	
+</header>
+
+
+
+
+<div></div>
+
+	
+<div class="scrollX">		
+	<!-- 
+	<img src="https://dl.boxcloud.com/api/2.0/internal_files/208866265765/versions/220874934693/representations/jpg_paged_2048x2048/content/1.jpg?access_token=1!G1gf8YhR09zNiAlCI_23UlkO8p9yRHFSBNDjlZgcgXHhLCpE6VWTlZk4nOq0RG0dF0QN5tdzkgaioMHr7Bd3BG0BilNBgWrZ3D83oo99b4faHfCPJ_LCJPq8BxUKFKMrWXBGHTK1WfINBYmUx-6oEtc8FDWABAFOnMfx79KZSZ0Qt2-l6LrZwXb1uKsIGDscB0Qx2NPTvGmciNeaQvX98YClyuDNySG_EqAgYMqXStCvZtvscMfYSo69wbPaGq_wzyNeUEYjEKjx6ZxkyAKcKhRP9C3btt8eIAsHjKKygEj43e-OenWfkGwXOZSSVddamgPorAi_y4aMDUKRqiXoiNlC3sRv3oE4X5zcyUuKla50Mt1xW3jFfeg_WbmbiGJADlsMqYQfQc1eAlZo&box_client_name=box-content-preview&box_client_version=1.4.2" width="1366px" height="819px" border="0" usemap="#Map2" />
+	-->
+	<img src="opening1.png" width="1150px" height="650px" border="0" usemap="#Map2" />
+</div>
+	
+	
+<map name="Map2" id="Map2">
+	
+	
+	
+	<area alt="" title="" href="http://managersjourney.w3ibm.mybluemix.net/opening.html" shape="rect" coords="669,562,449,489" />
+    <area alt="" title="" href="https://manachat.w3ibm.mybluemix.net/" shape="rect" target="_blank" coords="50,580,230,641" />
+	<area alt="" title="" href="http://managersjourney.w3ibm.mybluemix.net" shape="rect" coords="4,3,146,76" />
+</map>
+   
+	
+
+
+
+		
+		
+		
+		
+	</map>
+	
+	<footer>
+	
+	
+	
+	</footer>
+	
+	
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
+
+<script type="text/javascript" src="build/jquery.mapify.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	
+	$("img[usemap]:first").mapify({
+		hoverClass: "drop-hover"
+	});
+	
+	$("img[usemap]:last").mapify({
+		popOver: {
+			content: function(zone){ 
+				return "<strong>"+zone.attr("data-title")+"</strong>"+zone.attr("data-nbmembre")+" Members";
+			},
+			delay: 0.7,
+			margin: "15px",
+			height: "130px",
+			width: "260px"
+		}
+	});
+	
+});
+</script>
+
+<!-- Display the countdown timer in an element -->
+
+<script>
+
+
+
+var end = new Date('10/18/2017 10:00 GMT-03:00');
+
+var _second = 1000;
+var _minute = _second * 60;
+var _hour = _minute * 60;
+var _day = _hour * 24;
+var timer;
+
+function getESTOffset() {
+
+    return new Date().getTimezoneOffset() - (end.getTimezoneOffset())
+}
+
+function showRemaining() {
+    var now = new Date();
+    var distance = end - now - getESTOffset() * _hour;
+    if (distance < 0) {
+
+        clearInterval(timer);
+        document.getElementById('demo').innerHTML = 'EXPIRED!';
+
+        return;
+    }
+    var days = Math.floor(distance / _day);
+    var hours = Math.floor((distance % _day) / _hour);
+    var minutes = Math.floor((distance % _hour) / _minute);
+    var seconds = Math.floor((distance % _minute) / _second);
+
+    document.getElementById('demo').innerHTML = days + ' Days ';
+    document.getElementById('demo').innerHTML += hours + ' Hours ';
+    document.getElementById('demo').innerHTML += minutes + ' Minutes ';
+    
+}
+
+timer = setInterval(showRemaining, 1000);
+</script>
+
+
+
+
+</script>
+
+
+		
+</body>
+</html>

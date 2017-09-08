@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+e {
+    position: absolute;
+    left: 0px;
+    top: 550px;
+    
+}
+
+logo {
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    
+}
+
+table {
+    position: absolute;
+    left: 75px;
+    top: 200px;
+	font-size: 10px;	
+
+}
+th, td {
+    padding: 1px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+	
+}
+
+tr:hover{background-color:#f5f5f5}
+</style>
+</head>
+<body>
+
+
+
+
+<table  style="float: left" >
+    <tr>
+        <th colspan="3">Agenda</th> 
+    </tr>
+    <tr>
+        
+        <th>Horario</th>
+		<th>Duracion</th>
+		<th>Evento</th>
+        
+    </tr>
+    <tr>
+      
+      <!-- <td style="width:100px"><p id="e2"></p></th> -->
+     <td><p id="e2"></p></th>
+	<td>10'</th>
+<td>Mensaje Luciana</th>	
+	 
+        
+    </tr>
+	<tr>
+      
+      <td><p id="e3"></p></th>
+	  <td>20'</th>
+	  <td>Neuroscience of Leadership</th>
+              
+        
+    </tr>
+	
+	<tr>
+      
+      <td><p id="e4"></p></th>
+	  <td>5'</th>
+	  <td>MOVIMIENTO A SALAS</th>
+              
+        
+    </tr>
+	
+	
+	<tr>
+      
+      <td><p id="e5"></p></th>
+	  <td>25'</th>
+	  <td>Mindfulness</th>
+              
+        
+    </tr>
+	<tr>
+      
+      <td><p id="e6"></p></th>
+	  <td>30'</th>
+	  <td>Feedback</th>
+              
+        
+    </tr>
+	<tr>
+      
+      <td><p id="e7"></p></th>
+	  <td>30'</th>
+	  <td>Advocacy </th>
+              
+        
+    </tr>
+	<tr>
+      
+      <td><p id="e8"></p></th>
+	  <td>30'</th>
+	  <td>Strategical Thinking </th>
+              
+        
+    </tr>
+	<tr>
+      
+      <td><p id="e9"></p></th>
+	  <td>30'</th>
+	  <td>Talent Development</th>
+              
+        
+    </tr>
+	
+	
+	
+  
+</table>
+
+<img src="agenda.png" width="1150" height="650" >
+<a href="http://managersjourney.w3ibm.mybluemix.net/"><img src="logo.png" ></a>
+
+
+<e>
+<a href="http://managersjourney.w3ibm.mybluemix.net/recepcionsp.html"><img src="footer.png" "> </a>
+
+
+ </e>
+
+
+
+</body>
+
+
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
+
+<script type="text/javascript" src="build/jquery.mapify.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	
+	$("img[usemap]:first").mapify({
+		hoverClass: "drop-hover"
+	});
+	
+	$("img[usemap]:last").mapify({
+		popOver: {
+			content: function(zone){ 
+				return "<strong>"+zone.attr("data-title")+"</strong>"+zone.attr("data-nbmembre")+" Members";
+			},
+			delay: 0.7,
+			margin: "15px",
+			height: "130px",
+			width: "260px"
+		}
+	});
+	
+});
+</script>
+
+
+
+
+
+		
+
+
+
+
+<script>
+var date1 = new Date("Oct 18, 2017 13:00:00 GMT-03:00 ");
+var date2 = new Date("Oct 18, 2017 13:10:00 GMT-03:00 ");
+var date3 = new Date("Oct 18, 2017 13:30:00 GMT-03:00 ");
+var date4 = new Date("Oct 18, 2017 13:35:00 GMT-03:00 ");
+var date5 = new Date("Oct 18, 2017 14:00:00 GMT-03:00 ");
+var date6 = new Date("Oct 18, 2017 14:30:00 GMT-03:00 ");
+var date7 = new Date("Oct 18, 2017 15:00:00 GMT-03:00 ");
+var date8 = new Date("Oct 18, 2017 15:30:00 GMT-03:00 ");
+var date9 = new Date("Oct 18, 2017 16:00:00 GMT-03:00 ");
+
+
+ 
+
+
+ var days = date1.getDate();
+  var hours = date1.getHours();
+  var minutes = ('0'+date1.getMinutes()).slice(-2);  
+  var hours2 = date2.getHours();
+  var minutes2 = ('0'+date2.getMinutes()).slice(-2);
+   var hours3 = date3.getHours();
+  var minutes3 = ('0'+date3.getMinutes()).slice(-2);
+   var hours4 = date4.getHours();
+  var minutes4 = ('0'+date4.getMinutes()).slice(-2);
+   var hours5 = date5.getHours();
+  var minutes5 = ('0'+date5.getMinutes()).slice(-2);
+   var hours6 = date6.getHours();
+  var minutes6 = ('0'+date6.getMinutes()).slice(-2);
+  var hours7 = date7.getHours();
+  var minutes7 = ('0'+date7.getMinutes()).slice(-2);
+  var hours8 = date8.getHours();
+  var minutes8 = ('0'+date8.getMinutes()).slice(-2);
+  var hours9 = date9.getHours();
+  var minutes9 = ('0'+date9.getMinutes()).slice(-2);
+  
+  
+   
+  
+  
+ document.getElementById("e2").innerHTML = hours + ":"
+  + minutes;
+  document.getElementById("e3").innerHTML = hours2 + ":"
+  + minutes2;
+  document.getElementById("e4").innerHTML = hours3 + ":"
+  + minutes3;
+  document.getElementById("e5").innerHTML = hours4 + ":"
+  + minutes4;
+   document.getElementById("e6").innerHTML = hours5 + ":"
+  + minutes5;
+   document.getElementById("e7").innerHTML = hours6 + ":"
+  + minutes6;
+  document.getElementById("e8").innerHTML = hours7 + ":"
+  + minutes7;
+  document.getElementById("e9").innerHTML = hours8 + ":"
+  + minutes8;
+  document.getElementById("e10").innerHTML = hours9 + ":"
+  + minutes9;
+
+
+</script>
+
+</html>
